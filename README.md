@@ -1,6 +1,6 @@
 # Synthetic bearing-fault benchmarks
 
-Synthetic vibration data for studying **bearing degradation**, generated with [tseriz](https://tseriz.com), plus the notebooks, configurations and QA tools needed to reproduce every number in the article **[ARTICLE_URL — add link]**.
+Synthetic vibration data for studying **bearing degradation**, generated with [tseriz](https://tseriz.com), plus the notebooks, configurations and QA tools needed to reproduce every number in the [article](https://www.tseriz.com/blog/simulating-bearing-degradation-why-pure-statistical-noise-fails-in-predictive-maintenance/).
 
 The same healthy motor is degraded in three different ways, so a condition-monitoring method can be tested against known ground truth:
 
