@@ -13,7 +13,7 @@ The same healthy motor is degraded in three different ways, so a condition-monit
 
 All series: single channel in g, 8192 Hz, 20 s (163,841 points), shaft lines at 30/60/90 Hz (0.5/0.2/0.1 g), pink noise 0.05 g and white noise 0.02 g. Within one seed the first 10 s are bit-identical across the cases, so any difference after 10 s is caused by the degradation alone.
 
-[VIDEO_URL — add link]: screen recording of the Case A prompt entered in the tseriz AI agent.
+[VIDEO](https://youtu.be/mwG8oGWwxBU): screen recording of the Case A prompt entered in the tseriz AI agent.
 
 ![Raw data around the onset](figures/09_raw_data_snippet.png)
 
