@@ -1,0 +1,14 @@
+# full-length series are generated locally (6.9 MB per CSV, 90+ files)
+data/full/*
+!data/full/.gitkeep
+
+# secrets and local config
+.env
+*.env
+
+# python / jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.DS_Store

@@ -1,0 +1,103 @@
+{
+  "description": "20-second vibration signal from a 1800 RPM motor with developing inner-race bearing fault (162 Hz BPFI, 600 Hz resonance) and growing pink mechanical noise baseline.",
+  "duration_days": 0,
+  "duration_hours": 0,
+  "duration_minutes": 0,
+  "duration_seconds": 20,
+  "sampling_frequency_hz": 8192,
+  "seed": 4242,
+  "channels": [
+    {
+      "name": "vibration",
+      "unit": "g",
+      "mean": 0,
+      "noise_components": [
+        {
+          "color": "pink",
+          "amplitude": 0.05,
+          "ar_coefficient": 0,
+          "heteroscedasticity": 0,
+          "ramp": {
+            "start_seconds": 10,
+            "stop_seconds": 20,
+            "end_scale": 1.5
+          }
+        },
+        {
+          "color": "white",
+          "amplitude": 0.02,
+          "ar_coefficient": 0,
+          "heteroscedasticity": 0
+        }
+      ],
+      "trend_slope": null,
+      "oscillations": [
+        {
+          "amplitude": 0.5,
+          "phase": 0,
+          "waveform": "sine",
+          "period_seconds": 0.03333333333333333
+        },
+        {
+          "amplitude": 0.2,
+          "phase": 0,
+          "waveform": "sine",
+          "period_seconds": 0.016666666666666666
+        },
+        {
+          "amplitude": 0.1,
+          "phase": 0,
+          "waveform": "sine",
+          "period_seconds": 0.011111111111111112
+        }
+      ],
+      "transients": [
+        {
+          "onset_seconds": 10,
+          "amplitude": 0.1,
+          "natural_frequency_hz": 600,
+          "damping_ratio": 0.1,
+          "response_type": "impulse",
+          "repeat_hz": 162,
+          "ramp": {
+            "start_seconds": 10,
+            "stop_seconds": 20,
+            "end_scale": 5
+          }
+        }
+      ],
+      "removal_mode": null,
+      "removal_number": null,
+      "removal_percentage": null,
+      "removal_strategy": null,
+      "removal_num_gaps": null,
+      "removal_random_share": null,
+      "outlier_mode": null,
+      "outlier_number": null,
+      "outlier_percentage": null,
+      "outlier_value_mode": null,
+      "outlier_constant_value": null,
+      "outlier_range_min": null,
+      "outlier_range_max": null,
+      "outlier_factor": null,
+      "outlier_factor_sign": null,
+      "modulo_value": null
+    }
+  ],
+  "channel_correlations": [],
+  "removal_mode": null,
+  "removal_number": null,
+  "removal_percentage": null,
+  "removal_strategy": null,
+  "removal_num_gaps": null,
+  "removal_random_share": null,
+  "outlier_mode": null,
+  "outlier_number": null,
+  "outlier_percentage": null,
+  "outlier_value_mode": null,
+  "outlier_constant_value": null,
+  "outlier_range_min": null,
+  "outlier_range_max": null,
+  "outlier_factor": null,
+  "outlier_factor_sign": null
+}

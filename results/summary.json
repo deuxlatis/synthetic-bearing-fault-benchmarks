@@ -1,0 +1,410 @@
+{
+ "rms_growth_18_20": {
+  "Baseline": -0.0030913231875374647,
+  "Case A (naive)": 0.08613029435600494,
+  "Case B (physics)": 0.08787297648740666
+ },
+ "detect": [
+  {
+   "indicator": "RMS (raw)",
+   "threshold (healthy mean + 4 sd)": 0.3973,
+   "Case A (naive)": "3.25 s",
+   "Case B (physics)": "3.00 s",
+   "false alarms in healthy 0-10 s": 0
+  },
+  {
+   "indicator": "RMS 400-800 Hz",
+   "threshold (healthy mean + 4 sd)": 0.015,
+   "Case A (naive)": "1.50 s",
+   "Case B (physics)": "0.75 s",
+   "false alarms in healthy 0-10 s": 0
+  },
+  {
+   "indicator": "Kurtosis 400-800 Hz",
+   "threshold (healthy mean + 4 sd)": 3.4772,
+   "Case A (naive)": "no alarm",
+   "Case B (physics)": "no alarm",
+   "false alarms in healthy 0-10 s": 0
+  },
+  {
+   "indicator": "Crest factor 400-800 Hz",
+   "threshold (healthy mean + 4 sd)": 4.7115,
+   "Case A (naive)": "no alarm",
+   "Case B (physics)": "no alarm",
+   "false alarms in healthy 0-10 s": 0
+  },
+  {
+   "indicator": "Envelope line at 162 Hz",
+   "threshold (healthy mean + 4 sd)": 3.9173,
+   "Case A (naive)": "no alarm",
+   "Case B (physics)": "1.00 s",
+   "false alarms in healthy 0-10 s": 0
+  }
+ ],
+ "env_lines": {
+  "Baseline": {
+   "1x": 2.7270277443587165,
+   "2x": 2.570808718311922,
+   "3x": 2.675155384357851
+  },
+  "Case A (naive)": {
+   "1x": 2.288877309359076,
+   "2x": 2.289077939789181,
+   "3x": 1.8100831551205667
+  },
+  "Case B (physics)": {
+   "1x": 172.82622644554638,
+   "2x": 73.91463783695512,
+   "3x": 48.91504683271266
+  }
+ },
+ "fit": {
+  "Baseline": {
+   "a0": 0.0020398480466474354,
+   "a1": -0.0007238057812208804,
+   "se0": 0.0010438160984969995,
+   "se1": 0.00018087984339673318
+  },
+  "Case A (naive)": {
+   "a0": 0.0004266501170871791,
+   "a1": -0.00038840098780597006,
+   "se0": 0.0018834549019610307,
+   "se1": 0.0003263783996070453
+  },
+  "Case B (physics)": {
+   "a0": 0.10197343533852257,
+   "a1": 0.03914014804046573,
+   "se0": 0.0011619105737836533,
+   "se1": 0.00020134409014156408
+  }
+ },
+ "mc_table": [
+  {
+   "indicator": "RMS (raw)",
+   "Case A detected": "30/30",
+   "Case A median [s]": 4.5,
+   "Case A p10-p90 [s]": "3.50-5.75",
+   "Case B detected": "30/30",
+   "Case B median [s]": 3.75,
+   "Case B p10-p90 [s]": "2.50-5.00",
+   "Case C detected": "9/30",
+   "Case C median [s]": 6.0,
+   "Case C p10-p90 [s]": "-"
+  },
+  {
+   "indicator": "RMS 400-800 Hz",
+   "Case A detected": "30/30",
+   "Case A median [s]": 1.5,
+   "Case A p10-p90 [s]": "1.25-1.75",
+   "Case B detected": "30/30",
+   "Case B median [s]": 0.75,
+   "Case B p10-p90 [s]": "0.75-0.75",
+   "Case C detected": "30/30",
+   "Case C median [s]": 0.75,
+   "Case C p10-p90 [s]": "0.75-0.75"
+  },
+  {
+   "indicator": "Kurtosis 400-800 Hz",
+   "Case A detected": "2/30",
+   "Case A median [s]": 5.88,
+   "Case A p10-p90 [s]": "-",
+   "Case B detected": "0/30",
+   "Case B median [s]": NaN,
+   "Case B p10-p90 [s]": "-",
+   "Case C detected": "0/30",
+   "Case C median [s]": NaN,
+   "Case C p10-p90 [s]": "-"
+  },
+  {
+   "indicator": "Crest factor 400-800 Hz",
+   "Case A detected": "1/30",
+   "Case A median [s]": 5.5,
+   "Case A p10-p90 [s]": "-",
+   "Case B detected": "0/30",
+   "Case B median [s]": NaN,
+   "Case B p10-p90 [s]": "-",
+   "Case C detected": "0/30",
+   "Case C median [s]": NaN,
+   "Case C p10-p90 [s]": "-"
+  },
+  {
+   "indicator": "Envelope line at 162 Hz",
+   "Case A detected": "0/30",
+   "Case A median [s]": NaN,
+   "Case A p10-p90 [s]": "-",
+   "Case B detected": "30/30",
+   "Case B median [s]": 0.75,
+   "Case B p10-p90 [s]": "0.75-1.00",
+   "Case C detected": "30/30",
+   "Case C median [s]": 0.88,
+   "Case C p10-p90 [s]": "0.75-1.00"
+  }
+ ],
+ "mc_false_alarms": [
+  {
+   "index": "RMS 400-800 Hz",
+   "false alarms in 90 series": 3
+  },
+  {
+   "index": "Envelope line at 162 Hz",
+   "false alarms in 90 series": 3
+  },
+  {
+   "index": "Crest factor 400-800 Hz",
+   "false alarms in 90 series": 6
+  },
+  {
+   "index": "Kurtosis 400-800 Hz",
+   "false alarms in 90 series": 0
+  },
+  {
+   "index": "RMS (raw)",
+   "false alarms in 90 series": 0
+  }
+ ],
+ "cross": [
+  {
+   "features": "classic: RMS, band RMS, kurtosis, crest",
+   "trained on": "A",
+   "tested on": "A",
+   "AUC": 0.999,
+   "recall": 0.926,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic: RMS, band RMS, kurtosis, crest",
+   "trained on": "A",
+   "tested on": "B",
+   "AUC": 1.0,
+   "recall": 1.0,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic: RMS, band RMS, kurtosis, crest",
+   "trained on": "A",
+   "tested on": "C",
+   "AUC": 1.0,
+   "recall": 1.0,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic: RMS, band RMS, kurtosis, crest",
+   "trained on": "B",
+   "tested on": "A",
+   "AUC": 0.668,
+   "recall": 0.027,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic: RMS, band RMS, kurtosis, crest",
+   "trained on": "B",
+   "tested on": "B",
+   "AUC": 1.0,
+   "recall": 1.0,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic: RMS, band RMS, kurtosis, crest",
+   "trained on": "B",
+   "tested on": "C",
+   "AUC": 1.0,
+   "recall": 0.903,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic: RMS, band RMS, kurtosis, crest",
+   "trained on": "C",
+   "tested on": "A",
+   "AUC": 0.916,
+   "recall": 0.6,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic: RMS, band RMS, kurtosis, crest",
+   "trained on": "C",
+   "tested on": "B",
+   "AUC": 1.0,
+   "recall": 1.0,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic: RMS, band RMS, kurtosis, crest",
+   "trained on": "C",
+   "tested on": "C",
+   "AUC": 1.0,
+   "recall": 1.0,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic + envelope line",
+   "trained on": "A",
+   "tested on": "A",
+   "AUC": 0.999,
+   "recall": 0.926,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic + envelope line",
+   "trained on": "A",
+   "tested on": "B",
+   "AUC": 1.0,
+   "recall": 1.0,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic + envelope line",
+   "trained on": "A",
+   "tested on": "C",
+   "AUC": 1.0,
+   "recall": 1.0,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic + envelope line",
+   "trained on": "B",
+   "tested on": "A",
+   "AUC": 0.651,
+   "recall": 0.004,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic + envelope line",
+   "trained on": "B",
+   "tested on": "B",
+   "AUC": 1.0,
+   "recall": 1.0,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic + envelope line",
+   "trained on": "B",
+   "tested on": "C",
+   "AUC": 1.0,
+   "recall": 0.901,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic + envelope line",
+   "trained on": "C",
+   "tested on": "A",
+   "AUC": 0.913,
+   "recall": 0.528,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic + envelope line",
+   "trained on": "C",
+   "tested on": "B",
+   "AUC": 1.0,
+   "recall": 1.0,
+   "false positives": 0.0
+  },
+  {
+   "features": "classic + envelope line",
+   "trained on": "C",
+   "tested on": "C",
+   "AUC": 1.0,
+   "recall": 1.0,
+   "false positives": 0.0
+  },
+  {
+   "features": "overall RMS only",
+   "trained on": "A",
+   "tested on": "A",
+   "AUC": 0.934,
+   "recall": 0.811,
+   "false positives": 0.065
+  },
+  {
+   "features": "overall RMS only",
+   "trained on": "A",
+   "tested on": "B",
+   "AUC": 0.981,
+   "recall": 0.905,
+   "false positives": 0.065
+  },
+  {
+   "features": "overall RMS only",
+   "trained on": "A",
+   "tested on": "C",
+   "AUC": 0.798,
+   "recall": 0.411,
+   "false positives": 0.065
+  },
+  {
+   "features": "overall RMS only",
+   "trained on": "B",
+   "tested on": "A",
+   "AUC": 0.934,
+   "recall": 0.786,
+   "false positives": 0.025
+  },
+  {
+   "features": "overall RMS only",
+   "trained on": "B",
+   "tested on": "B",
+   "AUC": 0.981,
+   "recall": 0.877,
+   "false positives": 0.025
+  },
+  {
+   "features": "overall RMS only",
+   "trained on": "B",
+   "tested on": "C",
+   "AUC": 0.798,
+   "recall": 0.305,
+   "false positives": 0.025
+  },
+  {
+   "features": "overall RMS only",
+   "trained on": "C",
+   "tested on": "A",
+   "AUC": 0.934,
+   "recall": 0.899,
+   "false positives": 0.274
+  },
+  {
+   "features": "overall RMS only",
+   "trained on": "C",
+   "tested on": "B",
+   "AUC": 0.981,
+   "recall": 0.984,
+   "false positives": 0.274
+  },
+  {
+   "features": "overall RMS only",
+   "trained on": "C",
+   "tested on": "C",
+   "AUC": 0.798,
+   "recall": 0.726,
+   "false positives": 0.274
+  }
+ ],
+ "case_c_z": [
+  {
+   "median z after onset [sd]": "A",
+   "RMS": 7.1,
+   "band RMS": 41.2,
+   "envelope line": -0.2
+  },
+  {
+   "median z after onset [sd]": "B",
+   "RMS": 8.3,
+   "band RMS": 174.7,
+   "envelope line": 106.7
+  },
+  {
+   "median z after onset [sd]": "C",
+   "RMS": 1.5,
+   "band RMS": 46.8,
+   "envelope line": 32.1
+  }
+ ],
+ "auc_A_vs_C": {
+  "rms": 0.0,
+  "band_rms": 0.0,
+  "kurt_band": 0.0,
+  "crest_band": 0.02,
+  "bpfi_line": 1.0
+ }
+}
